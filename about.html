@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1" name="viewport" />
+  <title>CSAI — About</title>
+  <link href="data/photos/logo.png" rel="icon" type="image/png" />
+  <link href="assets/css/style.css" rel="stylesheet"></link>
+</head>
+<body>
+  <!-- ===== Header ===== -->
+  <header class="header">
+    <div class="nav container">
+      <nav class="drawer-nav">
+        <div class="header-container">
+          <input type="checkbox" id="sidebar-active" aria-hidden="true" />
+          <label for="sidebar-active" class="open-sidebar-button" aria-label="Open menu">
+            <svg class="hamburger" xmlns="http://www.w3.org/2000/svg" height="40" viewBox="0 -960 960 960" width="40" aria-hidden="true">
+              <path d="M120-200v-80h720v80H120Zm0-240v-80h720v80H120Zm0-240v-80h720v80H120Z" />
+            </svg>
+          </label>
+
+          <label id="overlay" for="sidebar-active"></label>
+          <div class="links-container" role="dialog" aria-modal="true" aria-label="Site">
+            <label for="sidebar-active" class="close-sidebar-button" aria-label="Close menu">
+              <svg xmlns="http://www.w3.org/2000/svg" height="32" viewBox="0 -960 960 960" width="32" aria-hidden="true">
+                <path d="m480-424-224 224-56-56 224-224-224-224 56-56 
+                         224 224 224-224 56 56-224 224 224 224-56 56-224-224Z" />
+              </svg>
+            </label>
+
+            <a class="home-link" href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="projects.html">Projects</a>
+            <a href="events.html">Events</a>
+            <a href="blog.html">Blog</a>
+            <a href="join.html">Join</a>
+          </div>
+          <a class="btn join mobile-join" href="join.html">Join</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ===== Hero ===== -->
+  <section class="hero" id="about-hero">
+    <div class="container">
+      <h1 class="reveal">Meet Our Team</h1>
+      <p class="reveal delay-1">
+        CSAI is powered by students passionate about computer science and AI.  
+        From mentoring to building real projects, here’s who makes it all happen.
+      </p>
+    </div>
+  </section>
+
+  <!-- ===== Profiles Section ===== -->
+  <section class="section" id="profiles">
+    <div class="container">
+      <h2 class="reveal">Our Team</h2>
+      <div class="profiles reveal delay-1">
+        <!-- Profile Card -->
+        <div class="profile-card">
+          <img alt="Abubaker Ahmadi" class="profile-photo" src="data/IMG_0745-1-2-edited-891x1024.jpg" />
+          <div class="profile-name">Prof. Shianling Wu</div>
+          <div class="profile-role">Advisor</div>
+          <div class="profile-bio">
+            Advises CSAI by overseeing club operations, guiding initiatives, organizing events, 
+            and mentoring students on projects and activities.
+            <br /><br />
+            <!-- Discreption -->
+          </div>
+        </div>
+
+        <div class="profile-card">
+          <img alt="Sarah Lee" class="profile-photo" src="data/photos/5627347276982655072.jpg" />
+          <div class="profile-name">Abubaker Ahmadi</div>
+          <div class="profile-role">President</div>
+          <div class="profile-bio">
+            Leads and organizes CSAI initiatives, oversees projects, manages publicity, grows membership, 
+            and coordinates events.
+            <br /><br />
+            This is a test only
+          </div>
+        </div>
+
+        <div class="profile-card">
+          <img alt="Anthony Joseph Carpinello" class="profile-photo" src="data/photos/IMG_2688.JPG" />
+          <div class="profile-name">Anthony Joseph Carpinello</div>
+          <div class="profile-role">Vice President</div>
+          <div class="profile-bio">
+            Supports CSAI initiatives, assists with projects and events, oversees committees, 
+            engages members, and chairs events.
+          </div>
+        </div>
+
+        <div class="profile-card">
+          <img alt="New Officer" class="profile-photo" src="assets/images/emily.jpg" />
+          <div class="profile-name">New Officer</div>
+          <div class="profile-role">Blog &amp; Media</div>
+          <div class="profile-bio">
+            Publishes blog posts, captures project highlights, and manages CSAI communications.
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Footer ===== -->
+  <footer class="footer">
+    © 2025 CSAI — Computer Science + AI Club
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/profiles.js"></script>
+</body>
+</html>

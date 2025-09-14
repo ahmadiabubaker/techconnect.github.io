@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1" name="viewport" />
+  <title>CSAI — Home</title>
+  <link href="data/photos/logo.png" rel="icon" type="image/png" />
+  <link href="assets/css/style.css" rel="stylesheet" />
+  <link href="assets/css/nav.css" rel="stylesheet" /></link>
+</head>
+<body>
+  <!-- ===== Header ===== -->
+  <header class="header">
+    <div class="nav container">
+      <!-- Navigation links -->
+      <!-- Join link always visible -->
+
+      <nav class="drawer-nav">
+        <div class="header-container">
+          <input type="checkbox" id="sidebar-active" aria-hidden="true" />
+          <label for="sidebar-active" class="open-sidebar-button" aria-label="Open menu">
+            <svg class="hamburger" xmlns="http://www.w3.org/2000/svg" height="40" viewBox="0 -960 960 960" width="40" aria-hidden="true">
+              <path d="M120-200v-80h720v80H120Zm0-240v-80h720v80H120Zm0-240v-80h720v80H120Z" />
+            </svg>
+          </label>
+
+          <label id="overlay" for="sidebar-active"></label>
+          <div class="links-container" role="dialog" aria-modal="true" aria-label="Site">
+            <label for="sidebar-active" class="close-sidebar-button" aria-label="Close menu">
+              <svg xmlns="http://www.w3.org/2000/svg" height="32" viewBox="0 -960 960 960" width="32" aria-hidden="true">
+                <path d="m480-424-224 224-56-56 
+                         224-224-224-224 56-56 
+                         224 224 224-224 56 56 
+                         -224 224 224 224-56 56-224-224Z" />
+              </svg>
+            </label>
+
+            <a class="home-link" href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="projects.html">Projects</a>
+            <a href="events.html">Events</a>
+            <a href="blog.html">Blog</a>
+            <a href="join.html">Join</a>
+          </div>
+          <a class="btn join mobile-join" href="join.html">Join</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ===== Hero ===== -->
+  <section class="hero" id="home">
+    <div class="container">
+      <h1 class="reveal">Where Computer Science meets AI</h1>
+      <p class="reveal delay-1">
+        Projects. Workshops. Hack nights. A community pushing the frontier — 
+        and having fun while doing it.
+      </p>
+      <div class="hero-cta reveal delay-2">
+        <a class="btn primary" href="projects.html">Explore Projects</a>
+        <a class="btn" href="join.html">Join the Club</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Scroll rail ===== -->
+  <nav aria-label="Section navigation" class="side-rail">
+    <div class="rail-track"><div class="rail-progress"></div></div>
+    <a class="rail-item active" data-label="Home" href="#home"></a>
+    <a class="rail-item" data-label="About" href="#about"></a>
+    <a class="rail-item" data-label="Projects" href="#feature-projects"></a>
+    <a class="rail-item" data-label="Events" href="#feature-events"></a>
+    <a class="rail-item" data-label="Blog" href="#feature-blog"></a>
+  </nav>
+
+  <!-- ===== About ===== -->
+  <section class="section" id="about">
+    <div class="container">
+      <h2 class="reveal">About CSAI</h2>
+      <p class="lead reveal delay-1">
+        We’re a student-run group exploring AI and computer science through hands-on
+        builds, talks, and mentorship. Whether you’re new or deep into research,
+        you’ll find collaborators, guidance, and a stage to showcase your work.
+      </p>
+      <div class="grid features">
+        <div class="card reveal">
+          <h3>Hands-on</h3>
+          <p>
+            Build real systems: agentic workflows, vision pipelines, simulation tooling,
+            and research-grade prototypes that become portfolio pieces.
+          </p>
+        </div>
+        <div class="card reveal delay-1">
+          <h3>Community</h3>
+          <p>
+            Weekly meetups, open labs, and hack nights. Pair up with mentors
+            and teammates who accelerate your learning curve.
+          </p>
+        </div>
+        <div class="card reveal delay-2">
+          <h3>Showcase</h3>
+          <p>
+            Demo days, cross-campus collabs, and blog spotlights. Publish write-ups,
+            ship public repos, and present to partners.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Featured Projects ===== -->
+  <section class="section" id="feature-projects">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="reveal">Featured Projects</h2>
+      </div>
+      <p class="lead reveal delay-1">
+        A taste of what members are building — from privacy-preserving attendance
+        to real-time robotics vision and modular agent labs.
+      </p>
+      <div class="grid">
+        <div class="card reveal">
+          <h3>Smart Attendance</h3>
+          <p>On-device ML for fast, privacy-first check-ins with cryptographic tokens.</p>
+        </div>
+        <div class="card reveal delay-1">
+          <h3>Robo Vision</h3>
+          <p>Low-latency inference and defect detection on embedded GPU targets.</p>
+        </div>
+        <div class="card reveal delay-2">
+          <h3>Agent Lab</h3>
+          <p>Composable tools, evals, and benchmarks for agentic workflows at scale.</p>
+        </div>
+      </div>
+      <div class="center reveal delay-3" style="margin-top:16px">
+        <a class="btn" href="projects.html">Explore all Projects</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Events ===== -->
+  <section class="section" id="feature-events">
+    <div class="container">
+      <h2 class="reveal">Upcoming Events</h2>
+      <p class="lead reveal delay-1">
+        Workshops, hack sessions, and guest talks designed to level you up — and connect you with builders.
+      </p>
+      <div class="grid">
+        <div class="card reveal">
+          <h3>Welcome Mixer</h3>
+          <p>Sep 8 — CS Atrium. Meet the team, pick a track, and grab some snacks.</p>
+        </div>
+        <div class="card reveal delay-1">
+          <h3>AI Agents Workshop</h3>
+          <p>Sep 15 — Room 204. Build your first agent with tools and evals.</p>
+        </div>
+        <div class="card reveal delay-2">
+          <h3>Vision Hack Night</h3>
+          <p>Sep 22 — Makerspace. Edge inference and data capture tracks.</p>
+        </div>
+      </div>
+      <div class="center reveal delay-3" style="margin-top:14px">
+        <a class="btn" href="events.html">Open Calendar</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Blog ===== -->
+  <section class="section" id="feature-blog">
+    <div class="container">
+      <h2 class="reveal">From the Blog</h2>
+      <p class="lead reveal delay-1">
+        Stories and write-ups from members. Techniques, post-mortems, and things we learned the hard way.
+      </p>
+      <div class="grid">
+        <div class="card reveal">
+          <h3>Launching CSAI 2025</h3>
+          <p>New tracks, a brighter site, and a packed calendar for builders.</p>
+        </div>
+        <div class="card reveal delay-1">
+          <h3>Project Spotlight</h3>
+          <p>Privacy-friendly attendance with on-device ML and signed passes.</p>
+        </div>
+        <div class="card reveal delay-2">
+          <h3>Workshop Recap</h3>
+          <p>Agents 101: tools, evals, pitfalls, and next steps.</p>
+        </div>
+      </div>
+      <div class="center reveal delay-3" style="margin-top:14px">
+        <a class="btn" href="blog.html">Read the Blog</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Footer ===== -->
+  <footer class="footer">
+    © 2025 CSAI — Computer Science + AI Club
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+  <script src="header.js"></script>
+</body>
+</html>
